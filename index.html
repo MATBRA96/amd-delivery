@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMN: Deliverys – Novelas, Mangas y Música</title>
+  <link rel="icon" type="image/png" href="images/mn.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AMN: Deliverys</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!---->
+  <section class="container py-5">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <h2 class="fw-bold mb-3">Busque libros, obras de arte y objetos de colección</h2>
+        <form class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="autor" placeholder="Autor" required>
+            <label for="autor">Ingresar autor</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="titulo" placeholder="Título" required>
+            <label for="titulo">Ingresar título</label>
+          </div>
+          <button class="btn btn-dark w-100 py-3 fw-bold" type="submit">
+            <i class="bi bi-search me-2"></i>Buscar
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-8">
+        <div id="carouselLibros" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded overflow-hidden">
+            <div class="carousel-item active">
+              <img src="images/portada1.jpg" class="d-block w-100" alt="Libros ilustrados">
+              <div class="carousel-caption d-none d-md-block bta-design">
+                <h5>40 libros ilustrados influyentes</h5>
+                <p>Descubre dónde se unen palabras y arte.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada2.jpg" class="d-block w-100" alt="Libros de ficción">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>100 libros de ficción para leer</h5>
+                <p>Un viaje literario a mundos diferentes.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada3.jpg" class="d-block w-100" alt="Catálogos de expertos">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Catálogos seleccionados por expertos</h5>
+                <p>Manuscritos, arte y ediciones únicas.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada4.jpg" class="d-block w-100" alt="Libros de no ficción">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>50 libros de no ficción imprescindibles</h5>
+                <p>Historia, biografías y superación personal.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada5.jpg" class="d-block w-100" alt="Misterios clásicos">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Misterios clásicos</h5>
+                <p>La era dorada de la novela negra.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada6.jpg" class="d-block w-100" alt="Libros infantiles valiosos">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Libros infantiles valiosos</h5>
+                <p>Ediciones raras y coleccionables.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/portada7.jpg" class="d-block w-100" alt="Libros de mesa de centro">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Libros de mesa de centro</h5>
+                <p>Arte, diseño y cultura visual.</p>
+              </div>
+            </div>
+          </div>
+          
+
+        <button class="bta-button">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+          <div class="bta-button">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLibros" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselLibros" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!---->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold mb-3">Descubre nuestros mejores libros</h2>
+          <p class="lead text-muted mb-4">
+            Explora novelas clásicas, ciencia ficción, aventura y los títulos más populares con descuentos especiales por tiempo limitado.
+          </p>
+          <a href="productos.html" class="btn btn-danger btn-lg px-4">Ver en catálogo</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-lg overflow-hidden">
+            <img src="images/dune.png" class="card-img-top" alt="Libro Dune">
+            <div class="card-body p-4">
+              <h4 class="fw-bold">Dune</h4>
+              <p class="text-muted mb-3">
+                Una de las novelas de ciencia ficción más influyentes de todos los tiempos. Aprovecha el descuento especial de este mes.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="text-danger fw-bold mb-0">S/ 62.90</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!---->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <h2 class="seccion-titulo mb-4">Novelas Imperdibles</h2>
+          <div class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                  <h5 class="fw-bold">El nombre de la rosa</h5>
+                  <p class="text-muted mb-0">Umberto Eco combina misterio, historia y filosofía en una apasionante investigación medieval.</p>
+              </div>
+          </div>
+          <div class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                  <h5 class="fw-bold">Colección de canciones populares</h5>
+                  <p class="text-muted mb-0">Una recopilación de obras tradicionales que forman parte del patrimonio cultural.</p>
+              </div>
+          </div>
+          <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                  <h5 class="fw-bold">Ensayo sobre gobernantes</h5>
+                  <p class="text-muted mb-0">Un análisis sobre el liderazgo, el poder y la organización de los estados.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="images/anna_frank.png" class="d-block w-50 mx-auto carousel-img" alt="Diario de Ana Frank">
+              </div>
+              <div class="carousel-item">
+                <img src="images/noboca_gritar.png" class="d-block w-50 mx-auto carousel-img" alt="No boca gritar">
+              </div>
+              <div class="carousel-item">
+                <img src="images/nombre_rosa.png" class="d-block w-50 mx-auto carousel-img" alt="El nombre de la rosa">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!----->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid h-100 w-100 object-fit-cover"
+                  alt="Promoción">
+            </div>
+            <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h4 class="fw-bold">ANTES DE IRTE</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="text-center"> 
+                <p>Regístrate para obtener un 30 % de descuento en tu primer libro.</p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Recipient’s username" aria-describedby="button-addon2">
+                  <button class="btn btn-primary btn-sm" type="button" id="button-addon2">¡REGÍSTRATE<br>AHORA!</button>
+                </div>
+                <p>Consigue acceso a ofertas exclusivas por email uniéndote a la comunidad.</p>
+                <p>Al continuar, aceptas los <a href="terms.html">Términos y condiciones</a> y la <a href="privacy.html">Política de privacidad.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----->
+  </section>
+
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6">
+          <a class="text-white fs-3 fw-bold" href="index.html">AMN: Deliverys</a>
+          <h6 class="fw-bold">Síguenos:</h6>
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <h6 class="fw-bold">Métodos de pago</h6>
+          <img src="images/metodo_pago.png" class="img-fluid mb-3 bta-pago" alt="Métodos de pago">
+          <h6 class="fw-bold">Libro de Reclamaciones</h6>
+          <img src="images/libro_reclamacion.jpg" class="bta-libro" alt="Libro de reclamaciones">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Mi Cuenta</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Mis pedidos</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Lista de deseos</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Recojo en tienda</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Contacto</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="">
+                <i class="bi bi-telephone-fill me-2"></i>
+                +51 919 177 015
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="">
+                <i class="bi bi-clock-fill me-2"></i>
+                Lun - Sáb: 8:00 am - 8:00 pm
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="">
+                <i class="bi bi-envelope-fill me-2"></i>
+                raulmirandachino@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Calle Falsa 123, Lima, Perú
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Políticas de privacidad</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cambios y devoluciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center small">
+        © 2026 AMN Deliverys S.A.C. | Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const miModal = new bootstrap.Modal(document.getElementById("miModal"));
+      miModal.show();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+</body>
+</html>
