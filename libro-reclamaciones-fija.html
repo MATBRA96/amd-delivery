@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMN: Deliverys – Novelas, Mangas y Música</title>
+  <link rel="icon" type="image/png" href="images/mn.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<section class="py-5 bta-reclamo-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="bta-reclamo-title">Libro de Reclamaciones</h2>
+      <p class="text-muted">
+        En AMV Deliverys valoramos tu opinión. Registra tu reclamo o sugerencia 
+        para seguir mejorando nuestro servicio.
+      </p>
+    </div>
+    <form class="bta-reclamo-form">
+      <div class="bta-form-card">
+        <h4 class="bta-form-title">
+          <i class="bi bi-geo-alt-fill"></i>
+          Ubicación del caso
+        </h4>
+        <p class="text-muted">Selecciona la zona donde ocurrió el inconveniente.</p>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="bta-label">Departamento (*)</label>
+            <select class="form-select bta-input">
+              <option>Seleccione departamento</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="bta-label">
+              Provincia (*)
+            </label>
+            <select class="form-select bta-input">
+              <option>Seleccione provincia</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="bta-label">
+              Distrito (*)
+            </label>
+            <select class="form-select bta-input">
+              <option>Seleccione distrito</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="bta-form-card">
+        <h4 class="bta-form-title">
+          <i class="bi bi-chat-square-text-fill"></i>
+          Tipo de solicitud
+        </h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-check bta-radio-box">
+              <input class="form-check-input" type="radio" name="tipo">
+              <label class="form-check-label">Reclamo</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check bta-radio-box">
+              <input class="form-check-input" type="radio" name="tipo">
+              <label class="form-check-label">Queja</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bta-form-card">
+        <h4 class="bta-form-title">
+          <i class="bi bi-box-seam-fill"></i>
+          Identificación del producto o servicio
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="bta-label">
+              Tipo
+            </label>
+            <select class="form-select bta-input">
+              <option>
+                Producto
+              </option>
+              <option>
+                Servicio
+              </option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="bta-label">Monto reclamado</label>
+            <input type="text" class="form-control bta-input" placeholder="S/">
+          </div>
+          <div class="col-12">
+            <label class="bta-label">Detalle del reclamo (*)</label>
+            <textarea class="form-control bta-input" rows="5" placeholder="Describe tu reclamo"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="bta-form-card">
+        <h4 class="bta-form-title">
+          <i class="bi bi-person-fill"></i>
+          Datos del consumidor
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="bta-label">Nombres (*)</label>
+            <input type="text" class="form-control bta-input">
+          </div>
+          <div class="col-md-6">
+            <label class="bta-label"> Apellidos (*)</label>
+            <input type="text" class="form-control bta-input">
+          </div>
+
+
+
+
+          <div class="col-md-6">
+
+            <label class="bta-label">
+              Documento (*)
+            </label>
+
+            <input 
+            type="text"
+            class="form-control bta-input">
+
+          </div>
+
+
+
+
+          <div class="col-md-6">
+
+            <label class="bta-label">
+              Teléfono
+            </label>
+
+            <input 
+            type="text"
+            class="form-control bta-input">
+
+          </div>
+
+
+
+          <div class="col-12">
+
+            <label class="bta-label">
+              Correo electrónico
+            </label>
+
+            <input 
+            type="email"
+            class="form-control bta-input">
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="text-center">
+
+        <button class="btn bta-btn-send">
+          <i class="bi bi-send-fill"></i>
+          Enviar reclamación
+        </button>
+
+
+      </div>
+
+
+    </form>
+
+
+  </div>
+
+
+</section>

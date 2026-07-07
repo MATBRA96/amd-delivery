@@ -29,64 +29,92 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <h1><span>MANGAS</span> | NOVELAS</h1>
-    <p class="mb-0">Explora nuestro catálogo y recibe tu pedido con delivery</p>
-  </div>
-
-  <!-- PRODUCTOS PRINCIPALES -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-1" style="color:#2c3e50;">Nuestros <span style="color:var(--rosa);">Productos</span></h2>
-      <p class="text-center text-muted mb-4">Serie completa con delivery incluido 🚚</p>
-      <div class="row g-4">
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="card card-producto h-100">
-            <img src="images/dune.jpg" alt="Dune" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Producto serie-completa</h5>
-              <p class="card-text text-muted flex-grow-1">DUNE catálogo serie ciencia ficción, falso profeta.</p>
-              <p class="fw-bold" style="color:var(--rosa);">S/ 180</p>
-              <button class="btn btn-rosa w-100" onclick="abrirModal()">
-                <i class="bi bi-cart-plus me-1"></i> Comprar
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="card card-producto h-100">
-            <img src="images/orgullo.jpg" alt="Orgullo" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Novela – dolor y encuentro</h5>
-              <p class="card-text text-muted flex-grow-1">Trata sobre la vida de la familia Bennet.</p>
-              <p class="fw-bold" style="color:var(--rosa);">S/ 100</p>
-              <button class="btn btn-rosa w-100" onclick="abrirModal()">
-                <i class="bi bi-cart-plus me-1"></i> Comprar
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="card card-producto h-100">
-            <img src="images/historial.jpg" alt="Historia" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Producto 3</h5>
-              <p class="card-text text-muted flex-grow-1">Sobre la historia de nuestro pasado y actualidad.</p>
-              <p class="fw-bold" style="color:var(--rosa);">S/ 80</p>
-              <button class="btn btn-rosa w-100" onclick="abrirModal()">
-                <i class="bi bi-cart-plus me-1"></i> Comprar
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
+  <section class="bta-page-hero">
+    <div class="bta-hero-content">
+      <h1>Nuestros Productos</h1>
+      <p class="mb-0">Explora nuestro catálogo y recibe tu pedido con delivery</p>
     </div>
   </section>
+
+<section class="py-5 bta-product-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bta-product-card">
+          <img src="images/dune_completo.jpg" class="card-img-top bta-product-image" alt="Dune">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">
+              Producto serie completa
+            </h5>
+            <p class="card-text text-muted flex-grow-1">
+              DUNE catálogo de ciencia ficción, una historia sobre poder,
+              destino y supervivencia.
+            </p>
+            <p class="fw-bold bta-product-price">S/ 180</p>
+            <button class="btn bta-btn-product w-100" onclick="abrirModal()">
+              <i class="bi bi-cart-plus me-1"></i>
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bta-product-card">
+          <img src="images/orgullo.jpg" class="card-img-top bta-product-image" alt="Orgullo y Prejuicio">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Novela - Dolor y encuentro</h5>
+            <p class="card-text text-muted flex-grow-1">
+              Una historia sobre la familia Bennet, emociones, decisiones y relaciones humanas.
+            </p>
+            <p class="fw-bold bta-product-price">
+              S/ 100
+            </p>
+            <button class="btn bta-btn-product w-100" onclick="abrirModal()">
+              <i class="bi bi-cart-plus me-1"></i>
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Producto 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 bta-product-card">
+
+          <img src="images/historial.jpg" 
+            class="card-img-top bta-product-image" 
+            alt="Historia">
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title fw-bold">
+              Historia y actualidad
+            </h5>
+
+            <p class="card-text text-muted flex-grow-1">
+              Un recorrido por acontecimientos del pasado y su influencia
+              en nuestra sociedad actual.
+            </p>
+
+            <p class="fw-bold bta-product-price">
+              S/ 80
+            </p>
+
+            <button class="btn bta-btn-product w-100" onclick="abrirModal()">
+              <i class="bi bi-cart-plus me-1"></i>
+              Comprar
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
   <!-- TAMBIÉN TE PUEDE INTERESAR -->
   <section class="py-5 bg-white">
@@ -142,8 +170,8 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
-          <img src="img/logo.png" alt="Logo Empresa" class="img-fluid mb-3" width="180">
-          <h6 class="fw-bold">Síguenos</h6>
+          <a class="text-white fs-3 fw-bold" href="index.html">AMN: Deliverys</a>
+          <h6 class="fw-bold">Síguenos:</h6>
           <div class="d-flex gap-3 mb-4">
             <a href="#" class="text-white fs-4">
               <i class="bi bi-facebook"></i>
@@ -159,9 +187,9 @@
             </a>
           </div>
           <h6 class="fw-bold">Métodos de pago</h6>
-          <img src="images/metodo_pago.png" class="img-fluid mb-3" alt="Métodos de pago">
+          <img src="images/metodo_pago.png" class="img-fluid mb-3 bta-pago" alt="Métodos de pago">
           <h6 class="fw-bold">Libro de Reclamaciones</h6>
-          <img src="images/libro_reclamacion.jpg" class="" alt="Libro de reclamaciones">
+          <img src="images/libro_reclamacion.jpg" class="bta-libro" alt="Libro de reclamaciones">
         </div>
         <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3">Mi Cuenta</h5>
@@ -176,25 +204,25 @@
           <h5 class="fw-bold mb-3">Contacto</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-telephone-fill me-2"></i>
                 +51 919 177 015
               </a>
             </li>
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-clock-fill me-2"></i>
                 Lun - Sáb: 8:00 am - 8:00 pm
               </a>
             </li>
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-envelope-fill me-2"></i>
                 raulmirandachino@gmail.com
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="mb-2">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-geo-alt-fill me-2"></i>
                 Calle Falsa 123, Lima, Perú
               </a>
@@ -204,7 +232,7 @@
         <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3">Información</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
+            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
             <li><a href="#" class="text-white text-decoration-none">Políticas de privacidad</a></li>
             <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
             <li><a href="#" class="text-white text-decoration-none">Cambios y devoluciones</a></li>

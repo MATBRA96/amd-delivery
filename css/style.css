@@ -1,6 +1,7 @@
 .bta-design{
   color: black;
   background-color: white;
+  border-radius: 15px;
 }
 
 .bta-button{
@@ -11,70 +12,246 @@
   border-radius: 50px;
 }
 
+.bta-bg{
+  background-color: #83bbff;
+  height: 450px;
+}
 
+.bta-imagebg{
+  height: 450px;
+}
 
+.bta-bgsection{
+  background: linear-gradient(to right, #2d5c94, #83bbff);
+}
 
+.bta-textb{
+  color: white;
+}
 
+.bta-imagsize{
+  height: 10px;
+}
 
+.bta-pago{
+  height: 50px;
+}
 
-
-
-
-:root {
-      --rosa: #e91e63;
-      --rosa-oscuro: #c2185b;
-    }
-    body { background-color: #f9f9f9; font-family: Helvetica, Arial, sans-serif; }
-
-    /* NAVBAR */
-    .navbar-brand { font-weight: 900; letter-spacing: 2px; color: #2c3e50 !important; font-size: 1.3rem; }
-    .navbar-nav .nav-link { font-weight: 700; text-transform: uppercase; color: #2c3e50 !important; font-size: 0.9rem; }
-    .navbar-nav .nav-link:hover { color: var(--rosa) !important; }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      min-height: 420px;
-      display: flex; align-items: center;
-    }
-    .hero h2 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; color: #fff; }
-    .hero h2 span { color: var(--rosa); }
-    .hero p { color: #c8d6e8; font-size: 1.1rem; }
-    .btn-rosa { background-color: var(--rosa); color: #fff; font-weight: 700; border: none; }
-    .btn-rosa:hover { background-color: var(--rosa-oscuro); color: #fff; }
-
-    /* OFERTAS */
-    .oferta-img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
-    .badge-oferta { background-color: var(--rosa); color: #fff; font-size: 0.75rem; }
-
-    /* SECCION DESTACADO */
-    .seccion-titulo { font-weight: 800; color: #2c3e50; }
-    .seccion-titulo span { color: var(--rosa); }
-
-    /* LISTA RECOMENDADOS */
-    .lista-recom li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 0.95rem; color: #444; }
-    .lista-recom li:last-child { border-bottom: none; }
-    .lista-recom li i { color: var(--rosa); margin-right: 8px; }
-
-    /* FOOTER */
-    footer { background-color: #111; color: #ccc; }
-    footer a { color: #ccc; text-decoration: none; }
-    footer a:hover { color: var(--rosa); }
-
-    .page-hero {
-      background: linear-gradient(135deg, #1a1a2e, #0f3460);
-      padding: 70px 0 50px;
-      text-align: center;
-    }
-
-    .page-hero h1 { color: #fff; font-weight: 900; font-size: clamp(1.8rem, 4vw, 2.8rem); }
-    .page-hero h1 span { color: var(--rosa); }
-    .page-hero p { color: #c8d6e8; }
-    /* VALORES */
-    .valor-card { border: none; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-    .valor-icon { font-size: 2rem; color: var(--rosa); }
-
+.bta-libro{
+  height: 150px;
+}
 
 .bwta-photo-equip{
   width: 250px;
+}
+
+.bta-page-hero {
+  background: linear-gradient(to right, #2d5c94, #83bbff);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.bta-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bta-page-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.bta-page-hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 auto 30px;
+  max-width: 700px;
+}
+
+.bta-accordion .accordion-button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.bta-accordion .accordion-body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bta-accordion .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+
+
+.bta-team-section {
+  background-color: #2d5c94;
+}
+
+.bta-team-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.bta-photo-equipo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.bta-team-card .card-body {
+  padding: 25px;
+}
+
+
+
+
+
+
+.bta-product-section {
+  background-color: #ffffff;
+}
+
+.bta-product-title {
+  color: #2c3e50;
+  font-size: 36px;
+}
+
+.bta-product-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+.bta-product-image {
+  height: 300px;
+  object-fit: cover;
+}
+
+.bta-product-price {
+  color: #83bbff;
+  font-size: 22px;
+}
+
+.bta-btn-product {
+  background-color: #83bbff;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+.bta-reclamo-section {
+  background-color: #83bbff;
+}
+
+
+.bta-reclamo-title {
+  color: #0f3460;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+
+
+.bta-reclamo-form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.bta-form-card {
+
+  background-color: #ffffff;
+
+  padding: 30px;
+
+  margin-bottom: 25px;
+
+  border-radius: 15px;
+
+  border-left: 6px solid #2d5c94;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+
+.bta-form-title {
+
+  color:#0f3460;
+
+  font-weight:700;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.bta-label {
+
+  color:#2d5c94;
+
+  font-weight:600;
+
+  margin-bottom:8px;
+
+}
+
+
+
+.bta-input {
+
+  border:2px solid #83bbff;
+
+}
+
+
+
+.bta-radio-box {
+
+  background:#eef6ff;
+
+  padding:15px;
+
+  border-radius:10px;
+
+}
+
+
+
+.bta-btn-send {
+
+  background-color:#0f3460;
+
+  color:#ffffff;
+
+  padding:14px 40px;
+
+  font-weight:bold;
+
+  border-radius:10px;
+
 }

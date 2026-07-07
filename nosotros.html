@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PE">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
     <div class="container">
@@ -19,8 +18,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
@@ -28,66 +27,115 @@
     </div>
   </nav>
 
-  <div class="page-hero">
-    <h1>AMV: Deliverys</h1>
-    <p>Conoce quiénes somos y nuestra historia</p>
-  </div>
+  <section class="bta-page-hero">
+    <div class="bta-hero-content">
+      <h1>Nosotros</h1>
+      <p>
+        Conectamos tus historias favoritas con la comodidad de recibirlas en la puerta de tu hogar.
+        Descubre nuestra pasión por las novelas, mangas y música.
+      </p>
+    </div>
+  </section>
 
   <section class="py-5 bg-white">
     <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="fw-bold mb-3" style="color:#2c3e50;">Sobre Nosotros</h2>
-          <p class="text-muted">Todavía es una página joven, pero esperamos seguir mejorando el sitio para sus servicios y que sean agustos para el cliente.</p>
-
-          <div class="mt-4">
-            <h5 class="fw-bold"><i class="bi bi-bullseye me-2"></i>Misión</h5>
-            <p class="text-muted">Un sitio web para entregar un espacio donde la literatura y la historia se encuentren.</p>
-          </div>
-
-          <div class="mt-3">
-            <h5 class="fw-bold"><i class="bi bi-eye me-2"></i>Visión</h5>
-            <p class="text-muted">Esperamos que esta página crezca y pueda ser de ayuda mientras aún está en fase de desarrollo.</p>
+      <div class="accordion bta-accordion" id="btaAccordionNosotros">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#btaNosotros" aria-expanded="true" aria-controls="btaNosotros">
+              <i class="bi bi-building me-2"></i> Sobre Nosotros
+            </button>
+          </h2>
+          <div id="btaNosotros" class="accordion-collapse collapse show" 
+            data-bs-parent="#btaAccordionNosotros">
+            <div class="accordion-body">
+              <p class="text-muted">
+                Todavía es una página joven, pero esperamos seguir mejorando el sitio 
+                para brindar mejores servicios y una experiencia agradable para nuestros clientes.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-6">
-          <h5 class="fw-bold mb-3"><i class="bi bi-heart me-2"></i>Valores</h5>
-          <div class="row g-3">
-            <div class="col-12">
-              <div class="card valor-card p-3 d-flex flex-row align-items-center gap-3">
-                <i class="bi bi-clock-history valor-icon"></i>
-                <div>
-                  <strong>Respeto por la historia</strong>
-                  <p class="mb-0 text-muted small">Honramos el conocimiento y la cultura que nos precede.</p>
-                </div>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#btaMision" aria-expanded="false" aria-controls="btaMision">
+              <i class="bi bi-bullseye me-2"></i> Misión
+            </button>
+          </h2>
+          <div id="btaMision" class="accordion-collapse collapse" 
+            data-bs-parent="#btaAccordionNosotros">
+            <div class="accordion-body">
+              <p class="text-muted">
+                Un sitio web creado para entregar un espacio donde la literatura, 
+                las historias y la cultura se encuentren.
+              </p>
             </div>
-            <div class="col-12">
-              <div class="card valor-card p-3 d-flex flex-row align-items-center gap-3">
-                <i class="bi bi-book valor-icon"></i>
-                <div>
-                  <strong>Compromiso con novelas y culturas</strong>
-                  <p class="mb-0 text-muted small">Fomentamos la lectura y la apreciación cultural.</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#btaVision" aria-expanded="false" aria-controls="btaVision">
+              <i class="bi bi-eye me-2"></i> Visión
+            </button>
+          </h2>
+          <div id="btaVision" class="accordion-collapse collapse" 
+            data-bs-parent="#btaAccordionNosotros">
+            <div class="accordion-body">
+              <p class="text-muted">
+                Esperamos que esta página crezca y pueda ser de ayuda para nuestros usuarios 
+                mientras continúa en constante desarrollo.
+              </p>
             </div>
-            <div class="col-12">
-              <div class="card valor-card p-3 d-flex flex-row align-items-center gap-3">
-                <i class="bi bi-stars valor-icon"></i>
-                <div>
-                  <strong>Calidad</strong>
-                  <p class="mb-0 text-muted small">Nuestros productos tienen la mejor calidad.</p>
-                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#btaValores" aria-expanded="false" aria-controls="btaValores">
+              <i class="bi bi-heart me-2"></i> Valores
+            </button>
+          </h2>
+          <div id="btaValores" class="accordion-collapse collapse" 
+            data-bs-parent="#btaAccordionNosotros">
+            <div class="accordion-body">
+              <div class="mb-3">
+                <h6 class="fw-bold">
+                  <i class="bi bi-clock-history me-2"></i>
+                  Respeto por la historia
+                </h6>
+                <p class="text-muted small">
+                  Honramos el conocimiento y la cultura que nos precede.
+                </p>
               </div>
-            </div>
-            <div class="col-12">
-              <div class="card valor-card p-3 d-flex flex-row align-items-center gap-3">
-                <i class="bi bi-unlock valor-icon"></i>
-                <div>
-                  <strong>Acceso abierto al conocimiento</strong>
-                  <p class="mb-0 text-muted small">Creemos que la literatura debe ser accesible para todos.</p>
-                </div>
+              <div class="mb-3">
+                <h6 class="fw-bold">
+                  <i class="bi bi-book me-2"></i>
+                  Compromiso con novelas y culturas
+                </h6>
+                <p class="text-muted small">
+                  Fomentamos la lectura y la apreciación cultural.
+                </p>
+              </div>
+              <div class="mb-3">
+                <h6 class="fw-bold">
+                  <i class="bi bi-stars me-2"></i>
+                  Calidad
+                </h6>
+                <p class="text-muted small">
+                  Nuestros productos tienen la mejor calidad.
+                </p>
+              </div>
+              <div>
+                <h6 class="fw-bold">
+                  <i class="bi bi-unlock me-2"></i>
+                  Acceso abierto al conocimiento
+                </h6>
+                <p class="text-muted small">
+                  Creemos que la literatura debe ser accesible para todos.
+                </p>
               </div>
             </div>
           </div>
@@ -95,45 +143,91 @@
       </div>
     </div>
   </section>
-  <section class="py-5" style="background-color:#5185b9">
+
+  <section class="py-5 bta-team-section">
     <div class="container">
-      <div>
-        <h2 class="fw-bold mb-3" style="color:#2c3e50;">Nuestro Equipo</h2>
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold bta-team-title bta-textb">
+          Nuestro Equipo
+        </h2>
+        <p class="bta-textb">
+          Personas comprometidas con brindar el mejor servicio y experiencia a nuestros clientes.
+        </p>
       </div>
+
       <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Fundador -->
         <div class="col">
-          <div class="card">
-            <div class="text-center">
-              <img src="images/rostro1.jpg" class="card-img rounded bwta-photo-equip" alt="Imagen del fundador">
+          <div class="card h-100 bta-team-card">
+
+            <img src="images/rostro1.jpg" 
+              class="card-img-top bta-photo-equipo" 
+              alt="Imagen del fundador">
+
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">
+                Fundador y CEO
+              </h5>
+
+              <p class="card-text text-muted">
+                Responsable de dirigir la visión del proyecto y crear una experiencia 
+                enfocada en la literatura, cultura y satisfacción del cliente.
+              </p>
             </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Fundador y CEO</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+
           </div>
         </div>
+
+
+        <!-- Ventas -->
         <div class="col">
-          <div class="card">
-            <div class="text-center">
-              <img src="images/rostro2.jpg" class="card-img rounded bwta-photo-equip" alt="Imagen del encargado">
+          <div class="card h-100 bta-team-card">
+
+            <img src="images/rostro2.jpg" 
+              class="card-img-top bta-photo-equipo" 
+              alt="Imagen del encargado de ventas">
+
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">
+                Encargado de Ventas
+              </h5>
+
+              <p class="card-text text-muted">
+                Gestiona la atención al cliente, pedidos y asesoramiento para 
+                encontrar los productos ideales.
+              </p>
             </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Encargado de Ventas</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+
           </div>
         </div>
+
+
+        <!-- Logística -->
         <div class="col">
-          <div class="card">
-            <img src="images/rostro3.jpg" class="card-img rounded bwta-photo-equip" alt="Imagen del encargado">
-            <div class="card-body">
-              <h5 class="card-title text-center">Encargado Logistico</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <div class="card h-100 bta-team-card">
+
+            <img src="images/rostro3.jpg" 
+              class="card-img-top bta-photo-equipo" 
+              alt="Imagen del encargado logístico">
+
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">
+                Encargado Logístico
+              </h5>
+
+              <p class="card-text text-muted">
+                Organiza la preparación y entrega de productos asegurando 
+                rapidez y calidad en cada pedido.
+              </p>
             </div>
+
           </div>
         </div>
+
       </div>
-      
+
     </div>
   </section>
 
@@ -141,8 +235,8 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
-          <img src="img/logo.png" alt="Logo Empresa" class="img-fluid mb-3" width="180">
-          <h6 class="fw-bold">Síguenos</h6>
+          <a class="text-white fs-3 fw-bold" href="index.html">AMN: Deliverys</a>
+          <h6 class="fw-bold">Síguenos:</h6>
           <div class="d-flex gap-3 mb-4">
             <a href="#" class="text-white fs-4">
               <i class="bi bi-facebook"></i>
@@ -158,9 +252,9 @@
             </a>
           </div>
           <h6 class="fw-bold">Métodos de pago</h6>
-          <img src="images/metodo_pago.png" class="img-fluid mb-3" alt="Métodos de pago">
+          <img src="images/metodo_pago.png" class="img-fluid mb-3 bta-pago" alt="Métodos de pago">
           <h6 class="fw-bold">Libro de Reclamaciones</h6>
-          <img src="images/libro_reclamacion.jpg" class="" alt="Libro de reclamaciones">
+          <img src="images/libro_reclamacion.jpg" class="bta-libro" alt="Libro de reclamaciones">
         </div>
         <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3">Mi Cuenta</h5>
@@ -175,25 +269,25 @@
           <h5 class="fw-bold mb-3">Contacto</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-telephone-fill me-2"></i>
                 +51 919 177 015
               </a>
             </li>
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-clock-fill me-2"></i>
                 Lun - Sáb: 8:00 am - 8:00 pm
               </a>
             </li>
             <li class="mb-2">
-              <a href="">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-envelope-fill me-2"></i>
                 raulmirandachino@gmail.com
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="mb-2">
+              <a href="" class="text-decoration-none bta-textb">
                 <i class="bi bi-geo-alt-fill me-2"></i>
                 Calle Falsa 123, Lima, Perú
               </a>
@@ -203,7 +297,7 @@
         <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3">Información</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
+            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
             <li><a href="#" class="text-white text-decoration-none">Políticas de privacidad</a></li>
             <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
             <li><a href="#" class="text-white text-decoration-none">Cambios y devoluciones</a></li>
@@ -216,6 +310,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  
 </body>
 </html>
